@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efedea2d04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Parexellence Unversity</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-university">
+                </i> Paraexellence
+            </a>
+            <div class="nav-links">
+                <i class="fas fa-times" id="fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Kenya's Best University
+            </h1>
+            <p>
+                Parexellence University is located in Nairobi, Kenya in pangani area. It is an affluent<br> school where only the rich can attend
+            </p>
+            <a href="" class="hero-btn">
+                Visit Us To Know More
+            </a>
+        </div>
+
+
+    </section>
+    <!-- coourses -->
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            These are the courses we offer at Parexellence University.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>
+                    Web Development
+                </h3>
+                <p>
+                    We offer the best web development courses in the country.Learn how to build a website with the latest technologies.Learn from the industry experts.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>
+                    Graphic Design
+                </h3>
+                <p>
+                    We offer the best graphic design courses in the country.Learn how to design logos with the latest technologies.Learn from the industry experts.
+
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>
+                    Video Editing
+                </h3>
+                <p>
+                    We offer the best video editing courses in the country.Learn how to edit videos with the latest technologies.Learn from the industry experts.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- campus section -->
+    <section class="campus">
+        <h1>
+            Our Campuses
+        </h1>
+        <p>
+            We have campuses in Nairobi, Mombasa and Kisumu.
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <h3>
+                    Nairobi
+                </h3>
+                <img src="/img/newyork.png" alt="">
+                <p>
+                    Our campus located in Nairobi, Kenya.
+                </p>
+            </div>
+            <div class="campus-col">
+                <h3>
+                    Mombasa
+                </h3>
+                <img src="/img/london.png" alt="">
+                <p>
+                    Our campus located in Mombasa, Kenya.
+                </p>
+            </div>
+            <div class="campus-col">
+                <h3>
+                    Kisumu
+                </h3>
+                <img src="/img/washington.png" alt="">
+                <p>
+                    Our campus located in Kisumu, Kenya.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- facilities -->
+    <section class="facilities">
+        <h1>
+            Our Facilities
+        </h1>
+        <p>
+            We have facilities in Nairobi, Mombasa and Kisumu.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+
+                <img src="/img/library.png" alt="">
+                <h3>
+                    Our Library
+                </h3>
+                <p>
+                    We have a library with a large collection of books.
+                </p>
+            </div>
+            <div class="facilities-col">
+
+                <img src="/img/basketball.png" alt="">
+                <h3>
+                    Our Gym
+                </h3>
+                <p>
+                    We have the best extra-curricular activities in the country.
+                </p>
+            </div>
+            <div class="facilities-col">
+
+                <img src="/img/cafeteria.png" alt="">
+                <h3>
+                    Cafeteria
+                </h3>
+                <p>
+                    We offer a balanced diet and healthy lifestyle.
+                </p>
+            </div>
+    </section>
+
+    <!-- toggle-Menu js code -->
+    <script>
+        const navlinks = document.querySelector(".nav-links");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+            navlinks.style.transition = "0.5s";
+
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px"
+
+        }
+    </script>
+
+
+</body>
+
+</html>
