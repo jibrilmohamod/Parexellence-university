@@ -5,6 +5,7 @@
     text-decoration: none;
     font-family: 'Poppins';
     box-sizing: border-box;
+    list-style: none;
 }
 
 .header {
@@ -353,6 +354,139 @@ h3 {
     font-weight: 600;
     margin-bottom: 40px;
     padding: 0;
+}
+
+
+/* footer styling */
+
+footer {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    background-color: #1C2444;
+    list-style: none;
+    text-decoration: none;
+    color: #d5e6e6;
+    line-height: 1.5em;
+    /* max-width: 1440px; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 390px;
+}
+
+label {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+}
+
+footer {
+    */
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+li a {
+    line-height: 2.5em;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+}
+
+li a:hover {
+    color: #07eee2;
+}
+
+section[class="one"] {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input[type="email"] {
+    height: 40px;
+    border: 1px solid #0735ee;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+input[type="email"]:focus {
+    outline: 1px solid #0735ee;
+}
+
+button {
+    min-width: 100px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #0735ee;
+    color: #0735ee;
+    font-weight: 900;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:hover:after {
+    width: 100%;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #0735ee;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-evenly;
+    font-size: 2em;
+    position: relative;
+    left: -40px;
+    width: 180px;
+    /* border: 1px solid #0735ee; */
+}
+
+i[class="fab fa-facebook"]:hover {
+    color: #4267B2;
+}
+
+i[class="fab fa-twitter"]:hover {
+    color: #1DA1F2;
+}
+
+i[class="fab fa-instagram"]:hover {
+    color: #E1306C;
 }
 
 
