@@ -14,7 +14,7 @@
     <section class="header">
         <nav>
             <a href="index.html">
-                <i class="fas fa-university">
+                <i class="fas fa-university " onmouseover="hover()" onmouseout="noHover()">
                 </i> Paraexellence
             </a>
             <div class="nav-links">
@@ -128,10 +128,10 @@
         <div class="row">
             <div class="facilities-col">
 
-                <img src="img/medium-shot-woman-holding-book.jpg" alt="">
+                <img src="img/lib.jpg" alt="">
                 <div class="layer">
                     <h3>
-                        Our Library <i class="fas fa-book-open"></i>
+                        Library <i class="fas fa-book-open"></i>
                     </h3>
                 </div>
 
@@ -141,7 +141,7 @@
                 <img src="/img/babls.jpg" alt="">
                 <div class="layer">
                     <h3>
-                        Our Gym <i class="fas fa-dumbbell"></i>
+                        Gym <i class="fas fa-dumbbell"></i>
                     </h3>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                 <img src="/img/caf.jpg" alt="">
                 <div class="layer">
                     <h3>
-                        Our Cafeteria <i class="fas fa-utensils"></i>
+                        Cafeteria <i class="fas fa-utensils"></i>
                     </h3>
                 </div>
     </section>
@@ -163,37 +163,64 @@
             <div class="testimonial-col">
                 <img src="/img/user1.jpg" alt="">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+                    Attending Parexellence University has been an amazing experience. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
                 <h3>
                     WaMuthoni Wajiko
                 </h3>
+                <div class="fas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+
+
             </div>
             <div class="testimonial-col">
 
-                <img src="/img/user2.jpg" alt="">
+                <img src="/img/user2.jpg" alt="" loading="lazy">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+                    Parexellence University is the best place to learn and further your skills. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
                 <h3>
                     Simon Mwenda
                 </h3>
-
+                <div class="fas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
             </div>
             <div class="testimonial-col">
 
                 <img src="/img/user3.webp" alt="">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+                    Parexellence University is the leading tertiary institution in the country. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
                 <h3>
-                    - John Doe
+                    Nasteha Warsame
                 </h3>
+                <div class="fas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-
-
-
         </div>
+    </section>
+    <!-- ---enroll section--- -->
+    <section class="enroll">
+        <h1>
+            Enroll for our various courses anywhere <br> from the World at any time.
+        </h1>
+        <a href="#" class="hero-btn">
+            Contact Us Now <i class="fas fa-phone"></i>
+        </a>
     </section>
     <!-- toggle-Menu js code -->
     <script>
@@ -207,6 +234,12 @@
 
         function hideMenu() {
             navlinks.style.right = "-200px"
+
+        }
+        const flip = document.querySelector("nav > a >i");
+
+        function hover() {
+            flip.classList.toggle("fa-flip");
 
         }
     </script>
