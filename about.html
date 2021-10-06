@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/efedea2d04.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-university " onmouseover="hover()" onmouseout="noHover()">
+                </i> Paraexellence
+            </a>
+            <div class="nav-links">
+                <i class="fas fa-times" id="fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                About US
+            </h1>
+        </div>
+    </section>
+    <section class="about-info">
+        <div class="row">
+            <div class="about-col">
+                <p>
+                    Paraexellence University is a higher learning institution located in Kenya, Africa. It was founded in the year 1906 and as such, the oldest University in Eastern Africa. We offer face to face classes in our three campuses located in Nairobi, Mombasa and
+                    Kisumu. We also offer online classes.
+                </p>
+            </div>
+            <div class="about-col">
+                <img src="/img/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+<script>
+    const navlinks = document.querySelector(".nav-links");
+
+    function showMenu() {
+        navlinks.style.right = "0";
+        navlinks.style.transition = "0.5s";
+
+    }
+
+    function hideMenu() {
+        navlinks.style.right = "-200px"
+
+    }
+    const flip = document.querySelector("nav > a >i");
+
+    function hover() {
+        flip.classList.toggle("fa-flip");
+
+    }
+</script>
+
+</html>

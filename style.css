@@ -360,33 +360,31 @@ h3 {
 /* footer styling */
 
 footer {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding-top: 100px;
-    background-color: #1C2444;
-    list-style: none;
-    text-decoration: none;
+    padding-bottom: 100px;
     color: #d5e6e6;
     line-height: 1.5em;
-    /* max-width: 1440px; */
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Source Serif Pro', serif;
     display: flex;
     margin: auto;
     justify-content: space-around;
-    /* align-items: center; */
     height: 390px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/);
+    border-radius: 10px;
+    overflow: visible;
+}
+
+footer p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.375em;
 }
 
 label {
     font-weight: 900;
     letter-spacing: 0.05em;
     font-size: 1.2em;
-}
-
-footer {
-    */
 }
 
 ul {
@@ -417,17 +415,19 @@ form {
 
 input[type="email"] {
     height: 40px;
-    border: 1px solid #0735ee;
+    border: 1px solid rgba(0, 192, 245, 1);
     margin-right: 5px;
     font-size: 17px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 input[type="email"]:focus {
-    outline: 1px solid #0735ee;
+    outline: 1px solid rgba(0, 192, 245, 1);
 }
 
 button {
-    min-width: 100px;
+    min-width: 150px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
@@ -441,8 +441,8 @@ button {
     z-index: 0;
     background: #fff;
     overflow: hidden;
-    border: 2px solid #0735ee;
-    color: #0735ee;
+    border: 2px solid rgb(0, 200, 255);
+    color: rgb(0, 200, 255);
     font-weight: 900;
 }
 
@@ -463,7 +463,14 @@ button:after {
     top: 0;
     width: 0;
     height: 100%;
-    background: #0735ee;
+    background: rgba(0, 192, 245, 1);
+}
+
+.fol {
+    text-align: left;
+    position: relative;
+    top: 30px;
+    left: 15px;
 }
 
 .social {
@@ -472,7 +479,6 @@ button:after {
     align-items: space-evenly;
     font-size: 2em;
     position: relative;
-    left: -40px;
     width: 180px;
     /* border: 1px solid #0735ee; */
 }
@@ -487,6 +493,14 @@ i[class="fab fa-twitter"]:hover {
 
 i[class="fab fa-instagram"]:hover {
     color: #E1306C;
+}
+
+.cp {
+    font-size: 16px;
+    font-weight: 300;
+    align-items: center;
+    position: absolute;
+    bottom: -3280px;
 }
 
 
@@ -549,6 +563,36 @@ i[class="fab fa-instagram"]:hover {
     .enroll {
         width: 80%;
         padding: 50px;
+    }
+    footer {
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    footer p {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.375em;
+        text-align: center;
+    }
+    .two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social {
+        font-size: 1.4em;
     }
 }
 

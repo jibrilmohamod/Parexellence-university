@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efedea2d04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="courses.css">
+
+    <title>Courses</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-university " onmouseover="hover()" onmouseout="noHover()">
+                </i> Paraexellence
+            </a>
+            <div class="nav-links">
+                <i class="fas fa-times" id="fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Courses We Offer
+            </h1>
+        </div>
+    </section>
+    <script>
+        const navlinks = document.querySelector(".nav-links");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+            navlinks.style.transition = "0.5s";
+
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px"
+
+        }
+        const flip = document.querySelector("nav > a >i");
+
+        function hover() {
+            flip.classList.toggle("fa-flip");
+
+        }
+    </script>
+
+</body>
+
+</html>
