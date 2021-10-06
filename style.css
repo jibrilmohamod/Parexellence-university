@@ -38,9 +38,9 @@ nav>a {
 nav a i[class*="uni"] {
     color: rgb(0, 200, 255);
     font-size: 1.5em;
-    --fa-animation-duration: 2s;
+    /* --fa-animation-duration: 2s; */
     --fa-animation-timing: ease-in-out;
-    --fa-animation-iteration-count: 0.5s;
+    /* --fa-animation-iteration-count: 0.5s; */
 }
 
 nav .nav-links {

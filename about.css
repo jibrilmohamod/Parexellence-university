@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/kew.jpg);
     background-size: cover;
     background-position: center;
     /* border: 10px solid gray; */
@@ -170,5 +172,32 @@ nav .nav-links {
     }
     .row {
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .nav-links ul li a {
+        font-size: 1.2em;
+    }
+    nav>a {
+        width: 400px;
+        color: #fff;
+        font-size: 1.7em;
+    }
+    nav a i[class*="uni"] {
+        font-size: 1.5em;
+    }
+    .header {
+        height: 50vh;
+    }
+    .text-box h1 {
+        font-size: 5em;
+    }
+    .about-col {
+        flex-basis: 48%;
+    }
+    .about-info p {
+        font-size: 1.2em;
+        line-height: 2em;
     }
 }
