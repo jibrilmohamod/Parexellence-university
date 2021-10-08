@@ -23,8 +23,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
+                    <li><a href="" class="enroll-btn">Enroll Now</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
@@ -53,6 +53,7 @@
         </p>
         <div class="row">
             <div class="course-col">
+                <i class="fas fa-code"></i>
                 <h3>
                     Web Development
                 </h3>
@@ -61,6 +62,7 @@
                 </p>
             </div>
             <div class="course-col">
+                <i class="fas fas fa-camera"></i>
                 <h3>
                     Graphic Design
                 </h3>
@@ -70,6 +72,7 @@
                 </p>
             </div>
             <div class="course-col">
+                <i class="fas fas fa-video"></i>
                 <h3>
                     Video Editing
                 </h3>
@@ -92,7 +95,7 @@
                 <h3>
                     Nairobi
                 </h3>
-                <img src="/img/newyork.png" alt="">
+                <img src="img/newyork.png" alt="">
                 <p>
                     Our campus located in Nairobi, Kenya.
                 </p>
@@ -101,7 +104,7 @@
                 <h3>
                     Mombasa
                 </h3>
-                <img src="/img/london.png" alt="">
+                <img src="img/london.png" alt="">
                 <p>
                     Our campus located in Mombasa, Kenya.
                 </p>
@@ -110,7 +113,7 @@
                 <h3>
                     Kisumu
                 </h3>
-                <img src="/img/washington.png" alt="">
+                <img src="img/washington.png" alt="">
                 <p>
                     Our campus located in Kisumu, Kenya.
                 </p>
@@ -138,7 +141,7 @@
             </div>
             <div class="facilities-col">
 
-                <img src="/img/babls.jpg" alt="">
+                <img src="img/babls.jpg" alt="">
                 <div class="layer">
                     <h3>
                         Gym <i class="fas fa-dumbbell"></i>
@@ -147,7 +150,7 @@
             </div>
             <div class="facilities-col">
 
-                <img src="/img/caf.jpg" alt="">
+                <img src="img/caf.jpg" alt="">
                 <div class="layer">
                     <h3>
                         Cafeteria <i class="fas fa-utensils"></i>
@@ -161,7 +164,7 @@
         </h1>
         <div class="row">
             <div class="testimonial-col">
-                <img src="/img/user1.jpg" alt="">
+                <img src="img/user1.jpg" alt="">
                 <p>
                     Attending Parexellence University has been an amazing experience. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
@@ -180,7 +183,7 @@
             </div>
             <div class="testimonial-col">
 
-                <img src="/img/user2.jpg" alt="" loading="lazy">
+                <img src="img/user2.jpg" alt="" loading="lazy">
                 <p>
                     Parexellence University is the best place to learn and further your skills. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
@@ -196,7 +199,7 @@
             </div>
             <div class="testimonial-col">
 
-                <img src="/img/user3.webp" alt="">
+                <img src="img/user3.webp" alt="">
                 <p>
                     Parexellence University is the leading tertiary institution in the country. I learned a lot from the teachers and the staff. I am very happy with the result.
                 </p>
@@ -334,23 +337,20 @@
                 </li>
 
         </section>
-        <p class="cp">
-            © 2021 Parexellence University. All rights reserved.
-        </p>
+
     </footer>
     <!-- toggle-Menu js code -->
     <script>
         const navlinks = document.querySelector(".nav-links");
 
         function showMenu() {
-            navlinks.style.right = "0";
+            navlinks.style.top = "0";
             navlinks.style.transition = "0.5s";
-
         }
 
         function hideMenu() {
-            navlinks.style.right = "-200px"
-
+            navlinks.style.top = "-140vw";
+            navlinks.style.transition = "0.5s";
         }
         const flip = document.querySelector("nav > a >i");
 

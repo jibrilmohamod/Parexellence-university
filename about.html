@@ -23,8 +23,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
+                    <li><a href="" class="enroll-btn">Enroll Now</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
@@ -42,13 +42,129 @@
                     Paraexellence University is a higher learning institution located in Kenya, Africa. It was founded in the year 1906 and as such, the oldest University in Eastern Africa. We offer face to face classes in our three campuses located in Nairobi, Mombasa and
                     Kisumu. We also offer online classes.
                 </p>
+                <a href="" class="hero-btn">
+                    learn More
+                </a>
             </div>
             <div class="about-col">
-                <img src="/img/about.jpg" alt="">
+                <img src="img/medium-shot-woman-holding-book.jpg" alt="">
             </div>
         </div>
 
     </section>
+    <footer>
+        <section class="one">
+            <ul class="info">
+                <label for="info">
+                    INFO
+                </label>
+                <li>
+                    <a href="">
+                        Formats
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Compression
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Status
+                    </a>
+                </li>
+            </ul>
+            <ul class="resources">
+                <label for="resources">
+                    RESOURCES
+                </label>
+                <li>
+                    <a href="">
+                        Developer API
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Tools
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="Company">
+                <label for="Company">
+                    COMPANY
+                </label>
+                <li>
+                    <a href="">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Sustainability
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Terms of Service
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Privacy Policy
+                    </a>
+                </li>
+        </section>
+
+        <section class="two">
+            <form action="">
+                <p>
+                    subscribe to our newsletter
+                </p>
+                <input type="email" placeholder="Enter your email">
+                <button>
+                        Subscribe
+                    </button>
+            </form>
+
+            <p class="fol">
+                Follow us
+            </p>
+            <ul class="social">
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+        </section>
+
+    </footer>
 
 
 </body>
@@ -56,14 +172,16 @@
     const navlinks = document.querySelector(".nav-links");
 
     function showMenu() {
-        navlinks.style.right = "0";
+        navlinks.style.top = "0";
         navlinks.style.transition = "0.5s";
+        // navlinks.style.display = "flex";
 
     }
 
     function hideMenu() {
-        navlinks.style.right = "-200px"
-
+        navlinks.style.top = "-140vh"
+            // navlinks.style.display = "none";
+            // navlinks.style.transition = "0.5s";
     }
     const flip = document.querySelector("nav > a >i");
 

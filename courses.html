@@ -24,8 +24,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
+                    <li><a href="" class="enroll-btn">Enroll Now</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
@@ -36,17 +36,171 @@
             </h1>
         </div>
     </section>
+    <!-- course-container -->
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            These are the courses we offer at Parexellence University.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <i class="fas fa-code"></i>
+                <h3>
+                    Web Development
+                </h3>
+                <p>
+                    We offer the best web development courses in the country.Learn how to build a website with the latest technologies.Learn from the industry experts.
+                </p>
+            </div>
+            <div class="course-col">
+                <i class="fas fa-camera">
+
+                </i>
+                <h3>
+                    Graphic Design
+                </h3>
+                <p>
+                    We offer the best graphic design courses in the country.Learn how to design logos with the latest technologies.Learn from the industry experts.
+
+                </p>
+            </div>
+            <div class="course-col">
+                <i class="fas fa-video"></i>
+                <h3>
+                    Video Editing
+                </h3>
+                <p>
+                    We offer the best video editing courses in the country.Learn how to edit videos with the latest technologies.Learn from the industry experts.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <section class="one">
+            <ul class="info">
+                <label for="info">
+                    INFO
+                </label>
+                <li>
+                    <a href="">
+                        Formats
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Compression
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Status
+                    </a>
+                </li>
+            </ul>
+            <ul class="resources">
+                <label for="resources">
+                    RESOURCES
+                </label>
+                <li>
+                    <a href="">
+                        Developer API
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Tools
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="Company">
+                <label for="Company">
+                    COMPANY
+                </label>
+                <li>
+                    <a href="">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Sustainability
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Terms of Service
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Privacy Policy
+                    </a>
+                </li>
+        </section>
+
+        <section class="two">
+            <form action="">
+                <p>
+                    subscribe to our newsletter
+                </p>
+                <input type="email" placeholder="Enter your email">
+                <button>
+                        Subscribe
+                    </button>
+            </form>
+
+            <p class="fol">
+                Follow us
+            </p>
+            <ul class="social">
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+        </section>
+    </footer>
     <script>
         const navlinks = document.querySelector(".nav-links");
 
         function showMenu() {
-            navlinks.style.right = "0";
+            navlinks.style.top = "0";
             navlinks.style.transition = "0.5s";
 
         }
 
         function hideMenu() {
-            navlinks.style.right = "-200px"
+            navlinks.style.top = "-160vh"
 
         }
         const flip = document.querySelector("nav > a >i");
