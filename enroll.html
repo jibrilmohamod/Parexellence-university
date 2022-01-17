@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enroll.css">
+    <script src="https://kit.fontawesome.com/efedea2d04.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-university " onmouseover="hover()" onmouseout="noHover()">
+                </i> Paraexellence
+            </a>
+            <div class="nav-links">
+                <i class="fas fa-times" id="fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="enr" class="enroll-btn">Enroll Now</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="fa" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Enroll Now
+            </h1>
+        </div>
+    </section>
+    <section class="form">
+        <form action="">
+            <fieldset class="form-group">
+                <label for="name">Name</label>
+                <input value="jman" type="text" name="name" id="name" placeholder="Enter your name">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            </fieldset>
+            <div class="form-group">
+                <input type="submit" id="submit"></input>
+            </div>
+        </form>
+
+    </section>
+
+    <script>
+        const navlinks = document.querySelector(".nav-links");
+
+        function showMenu() {
+            navlinks.style.top = "0";
+            navlinks.style.transition = "0.5s";
+            // navlinks.style.display = "flex";
+
+        }
+
+        function hideMenu() {
+            navlinks.style.top = "-140vh"
+                // navlinks.style.display = "none";
+                // navlinks.style.transition = "0.5s";
+        }
+        const flip = document.querySelector("nav > a >i");
+
+        function hover() {
+            flip.classList.toggle("fa-flip");
+
+        }
+    </script>
