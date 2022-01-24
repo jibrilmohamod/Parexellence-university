@@ -39,11 +39,38 @@
         <form action="">
             <fieldset class="form-group">
                 <label for="name">Name</label>
-                <input value="jman" type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
             </fieldset>
             <fieldset class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone" pattern="">
+            </fieldset>
+            <Fieldset class="form-group">
+                <label for="course">Course</label>
+                <select name="courses" id="">
+                    <option value="">Select Course</option>
+                    <option value="">Web Development</option>
+                    <option value="">Graphic Design</option>
+                    <option value="">Video Editing</option>
+                </select>
+            </Fieldset>
+            <fieldset class="form-group">
+                <label for="Campus">Campus
+                </label>
+                <select name="Campus" id="">
+                    <option value="">Select Campus</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Chittagong</option>
+                    <option value="">Rajshahi</option>
+                    <option value="">Sylhet</option>
+                    <option value="">Khulna</option>
+                    <option value="">Barisal</option>
+                    <option value="">Rangpur</option>
+                </select>
             </fieldset>
             <fieldset class="form-group">
                 <label for="message">Message</label>
@@ -55,6 +82,7 @@
         </form>
 
     </section>
+    vue
 
     <script>
         const navlinks = document.querySelector(".nav-links");
